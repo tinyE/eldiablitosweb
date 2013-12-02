@@ -1,0 +1,316 @@
+/* HEADER */
+    /* page header */  
+    div#header {  
+        display: inline;  
+        clear: both;  
+        margin-bottom: 20px;
+	text-align:center;
+ 	margin-left:auto;
+	margin-right:auto; 
+    } 
+
+   section#pagetitle {
+   font-family: Sancreek;
+   font-size: 96px;
+   margin-left: 0;
+   display: inline-block;
+   padding: 0;
+   margin-left:auto;
+   margin-right:auto;
+   text-shadow: 1px 1px #DECDAD;
+}
+
+   section#titleimageleft {
+   display: inline-block;
+   padding: 0;
+   float:middle;
+}
+
+   section#titleimageright {
+   display: inline-block;
+   padding: 0;
+   float:middle;
+}
+
+
+   /* START NAV MENU */
+nav {
+  display: inline;
+  height:40px;
+  float:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+ 
+ 
+nav ul {
+  font-family: Sancreek, Verdana;
+  font-size: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 0;
+  list-style: none;
+  text-align:center;
+  
+}
+ 
+nav ul li {
+  display: inline-block;
+  position: relative;
+/*  float: left; */
+ 
+}
+ 
+nav li ul {
+  display: none;
+}
+ 
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #940619;
+  color: #000000; 
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:90px;
+  text-align:center;
+    text-shadow: 0 0 3px #f6f900;
+ 
+}
+ 
+nav ul li a:hover {
+  background: #95A9B1;
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+ 
+nav li:hover li {
+  float: none;
+  font-size: 15px;
+  color: #FFFFFF;
+/*    font-size: 150%;
+    font-weight: bold; 
+    padding: 3px 5px 3px 7px; */
+    text-shadow: 3px 3px 3px #000000;
+}
+ 
+nav li:hover a {
+  background: #940619;
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+  color: #FFFFFF;
+    text-shadow: 3px 3px 3px #000000;
+}
+ 
+nav li:hover li a:hover {
+  background: #95A9B1;
+}
+ 
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+ 
+/* END NAV MENU */ 
+
+    /* page core */  
+    div#core {  
+        display: block;  
+        clear: both;  
+        margin-bottom: 20px;  
+    }  
+    section#left {  
+        width: 40%;  
+        float: left;  
+        margin: 0 10px;  
+    }  
+    section#right {  
+        float: right;  
+        width: 40%;
+	margin: 0 10px;  
+    }  
+
+    section#center {  
+        text-align:left;
+	font-weight:bold; 
+        width: 400px;
+	margin: 0 33%;  
+    } 
+
+    section#about {  
+        text-align:left;
+	font-weight:bold; 
+        width: 400px;
+	margin: 5% 25% 5% 25%; 
+	font-size:large; 
+    } 
+
+    section#embedded {
+	float:middle;
+    }
+
+    section#titles {
+	font-family:Sancreek;
+	font-size:48;
+	font-weight:bold;
+	text-align:left;
+	text-shadow: 1px 1px #DECDAD;
+    } 
+
+    section#headlines {
+	font-family:Sancreek;
+	font-size:24;
+	font-weight:bold;
+	text-shadow: 1px 1px #DECDAD;
+    }
+
+    section#newstext {
+	font-family:Arial;
+	font-size:14;
+	font-weight:bold;
+	}
+	
+      
+   /* page navigation */
+	section#navigation {
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	}
+
+       
+    /* clearfix */  
+    .clearfix:after {  
+        content: ".";  
+        display: block;  
+        clear: both;  
+        visibility: hidden;  
+        line-height: 0;  
+        height: 0;  
+    }  
+    .clearfix {  
+        display: inline-block;  
+    }  
+       
+    html[xmlns] .clearfix {  
+        display: block;  
+    }  
+    * html .clearfix {  
+        height: 1%;  
+    }  
+
+    ul li[title^="ico"] {  
+        background: url('my-icon.gif');  
+    } 
+
+/* ---------------------------  email form  --------------------------------- */
+#carbonForm{
+    /* The main form container */
+    background-color:#1C1C1C;
+    border:1px solid #080808;
+    margin:20px auto;
+    padding:20px;
+    width:500px;
+
+    -moz-box-shadow:0 0 1px #444 inset;
+    -webkit-box-shadow:0 0 1px #444 inset;
+    box-shadow:0 0 1px #444 inset;
+}
+
+.fieldContainer{
+    /* The light rounded section, which contans the fields */
+    background-color:#1E1E1E;
+    border:1px solid #0E0E0E;
+    padding:30px 10px;
+
+    /* CSS3 box shadow, used as an inner glow */
+    -moz-box-shadow:0 0 20px #292929 inset;
+    -webkit-box-shadow:0 0 20px #292929 inset;
+    box-shadow:0 0 20px #292929 inset;
+}
+
+#fieldtitle{
+    color:white;
+}
+
+#carbonForm,.fieldContainer,.errorTip{
+    /* Rounding the divs at once */
+    -moz-border-radius:12px;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+}
+
+.formRow{
+    height:35px;
+    padding:10px;
+    position:relative;
+}
+
+.label{
+    float:left;
+    padding:0 20px 0 0;
+    text-align:right;
+    width:70px;
+    color:white;
+}
+
+label{
+    font-family:Century Gothic,Myriad Pro,Arial,Helvetica,sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    line-height:35px; /* Neat line height trick */
+}
+
+.field{
+    float:left;
+}
+
+.field input{
+    /* The text boxes */
+    border:1px solid white;
+    color:#940619;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:22px;
+    padding:4px 5px;
+    background:scroll left top #FFFFFF;
+    outline:none;
+}
+
+#submit{
+    /* The submit button */
+    border:1px solid #FFFFFF;
+    cursor:pointer;
+    height:40px;
+    text-transform:uppercase;
+    width:110px;
+    color:white;
+
+   background:center center #292929;
+
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+}
+
+#submit.active{
+    /* Marking the submit button as active adds the preloader gif as background 
+    background-image:url("img/preloader.gif"); */
+}
+
+input:hover,
+input:focus{
+    /* CSS3 glow effect */
+    -moz-box-shadow:0 0 8px #940619;
+    -webkit-box-shadow:0 0 8px #940619;
+    box-shadow:0 0 8px #940619;
+}
+
+/* --------------- image gallery ----------------- */
+#wrap {
+  width: 1020px;
+  margin: 0 auto;
+}
