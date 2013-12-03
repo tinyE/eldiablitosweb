@@ -17,7 +17,8 @@
    padding: 0;
    margin-left:auto;
    margin-right:auto;
-   text-shadow: 1px 1px #DECDAD;
+   color:#940619;
+   text-shadow: 2px 2px #f0f2dd;
 }
 
    section#titleimageleft {
@@ -69,6 +70,7 @@ nav ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 7px 15px 3px 15px;
+/*  background: #940619; */
   background: #940619;
   color: #000000; 
   margin-left: 1px;
@@ -93,7 +95,7 @@ nav li:hover ul {
 nav li:hover li {
   float: none;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #912403;
 /*    font-size: 150%;
     font-weight: bold; 
     padding: 3px 5px 3px 7px; */
@@ -101,9 +103,9 @@ nav li:hover li {
 }
  
 nav li:hover a {
-  background: #940619;
+  background: #912403;
   height:30px; /* Height of lower-level nav items is shorter than main level */
-  color: #FFFFFF;
+  color: #f9f9ec;
     text-shadow: 3px 3px 3px #000000;
 }
  
@@ -126,19 +128,23 @@ nav ul li ul li a {
     section#left {  
         width: 40%;  
         float: left;  
-        margin: 0 10px;  
+        margin: 0 10px 0 40px;
+	color:#f0f2dd; 
+	 
     }  
     section#right {  
         float: right;  
         width: 40%;
-	margin: 0 10px;  
+	margin: 0 50px;
+	color:#f0f2dd;  
     }  
 
     section#center {  
         text-align:left;
 	font-weight:bold; 
         width: 400px;
-	margin: 0 33%;  
+	margin: 0 33%; 
+	color:#f0f2dd; 
     } 
 
     section#about {  
@@ -146,7 +152,8 @@ nav ul li ul li a {
 	font-weight:bold; 
         width: 400px;
 	margin: 5% 25% 5% 25%; 
-	font-size:large; 
+	font-size:large;
+	color:#f0f2dd; 
     } 
 
     section#embedded {
@@ -158,20 +165,23 @@ nav ul li ul li a {
 	font-size:48;
 	font-weight:bold;
 	text-align:left;
-	text-shadow: 1px 1px #DECDAD;
+/*	text-shadow: 1px 1px #DECDAD; */
+	color:#f0f2dd;
     } 
 
     section#headlines {
 	font-family:Sancreek;
 	font-size:24;
 	font-weight:bold;
-	text-shadow: 1px 1px #DECDAD;
+/*	text-shadow: 1px 1px #DECDAD; */
+	color:#f0f2dd;
     }
 
     section#newstext {
 	font-family:Arial;
 	font-size:14;
 	font-weight:bold;
+	color:#f0f2dd;
 	}
 	
       
