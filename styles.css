@@ -148,10 +148,10 @@ nav ul li ul li a {
     } 
 
     section#about {  
-        text-align:left;
+        text-align:middle;
 	font-weight:bold; 
-        width: 400px;
-	margin: 5% 25% 5% 25%; 
+        width: 500px;
+	margin: 5% 20% 5% 30%; 
 	font-size:large;
 	color:#f0f2dd; 
     } 
