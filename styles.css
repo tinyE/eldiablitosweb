@@ -324,3 +324,12 @@ input:focus{
   width: 1020px;
   margin: 0 auto;
 }
+
+
+/* -------------- iframe --------------- */
+iframe[seamless]{
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
